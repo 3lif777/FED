@@ -38,8 +38,9 @@ Responsive (en surface plane als er tijd voor is)
     https://smoothcomp.com/en
   #### Screenshot(s) van de eerste pagina (small screen): 
     Home pagina
-<img src="readme-images/sc1.png" width="350px" alt="home pagina"> Hier begint mijn pagina
+<img src="readme-images/sc1.png" width="350px" alt="home pagina"> Hier begint de website
 <img src="readme-images/sc2.png" width="350px" alt="home pagina"> Hier is content met linkjes naar andere pagina's
+
 
   #### Screenshot(s) van de tweede pagina (small screen):
     Detail pagina
