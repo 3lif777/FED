@@ -37,10 +37,17 @@ Responsive (en surface plane als er tijd voor is)
   ### Je opdracht:
     https://smoothcomp.com/en
   #### Screenshot(s) van de eerste pagina (small screen): 
-    Home pagina <img src="readme-images/sc1.png" width="375px" alt="omschrijving van de pagina"><img src="readme-images/sc2.png" width="375px" alt="omschrijving van de pagina"><img src="readme-images/sc3.png" width="375px" alt="omschrijving van de pagina">
+    Home pagina 
+    <img src="readme-images/sc1.png" width="375px" alt="omschrijving van de pagina">
+    <img src="readme-images/sc2.png" width="375px" alt="omschrijving van de pagina">
+    <img src="readme-images/sc3.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-    Detail pagina <img src="readme-images/sc4.png" width="375px" alt="omschrijving van de pagina"><img src="readme-images/sc5.png" width="375px" alt="omschrijving van de pagina"><img src="readme-images/sc6.png" width="375px" alt="omschrijving van de pagina"><img src="readme-images/sc7.png" width="375px" alt="omschrijving van de pagina">
+    Detail pagina 
+    <img src="readme-images/sc4.png" width="375px" alt="omschrijving van de pagina">
+    <img src="readme-images/sc5.png" width="375px" alt="omschrijving van de pagina">
+    <img src="readme-images/sc6.png" width="375px" alt="omschrijving van de pagina">
+    <img src="readme-images/sc7.png" width="375px" alt="omschrijving van de pagina">
 </details>
 
 
