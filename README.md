@@ -38,17 +38,13 @@ Responsive (en surface plane als er tijd voor is)
     https://smoothcomp.com/en
   #### Screenshot(s) van de eerste pagina (small screen): 
     Home pagina
-<img src="readme-images/sc1.png" width="375px" alt="omschrijving van de pagina">
-Hier begint mijn pagina
-<img src="readme-images/sc2.png" width="375px" alt="omschrijving van de pagina">
-Hier is content met linkjes naar andere pagina's
+<img src="readme-images/sc1.png" width="375px" alt="omschrijving van de pagina"> Hier begint mijn pagina
+<img src="readme-images/sc2.png" width="375px" alt="omschrijving van de pagina"> Hier is content met linkjes naar andere pagina's
 
   #### Screenshot(s) van de tweede pagina (small screen):
     Detail pagina
-<img src="readme-images/sc4.png" width="375px" alt="omschrijving van de pagina">
-Hier begint de detail pagina
-<img src="readme-images/sc5.png" width="375px" alt="omschrijving van de pagina">
-Hier is wat tekst
+<img src="readme-images/sc4.png" width="375px" alt="omschrijving van de pagina"> Hier begint de detail pagina
+<img src="readme-images/sc5.png" width="375px" alt="omschrijving van de pagina"> Hier is wat tekst
 <img src="readme-images/sc7.png" width="375px" alt="omschrijving van de pagina">
 
 
