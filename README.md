@@ -37,17 +37,18 @@ Responsive (en surface plane als er tijd voor is)
   ### Je opdracht:
     https://smoothcomp.com/en
   #### Screenshot(s) van de eerste pagina (small screen): 
-    Home pagina 
-    <img src="readme-images/sc1.png" width="375px" alt="omschrijving van de pagina">
-    <img src="readme-images/sc2.png" width="375px" alt="omschrijving van de pagina">
-    <img src="readme-images/sc3.png" width="375px" alt="omschrijving van de pagina">
+    Home pagina
+<img src="readme-images/sc1.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/sc2.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/sc3.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-    Detail pagina 
-    <img src="readme-images/sc4.png" width="375px" alt="omschrijving van de pagina">
-    <img src="readme-images/sc5.png" width="375px" alt="omschrijving van de pagina">
-    <img src="readme-images/sc6.png" width="375px" alt="omschrijving van de pagina">
-    <img src="readme-images/sc7.png" width="375px" alt="omschrijving van de pagina">
+    Detail pagina
+<img src="readme-images/sc4.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/sc5.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/sc6.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/sc7.png" width="375px" alt="omschrijving van de pagina">
+
 </details>
 
 
@@ -59,6 +60,9 @@ Responsive (en surface plane als er tijd voor is)
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  De screenreader pakt alle headings en linkjes op de juiste volgorde. Als ik op 1 klik pakt die alle H1's en als ik 2 of 3 klik leest die de juiste bijhorende headings voor. 
+  Bij images zegt die unlabed graphic, dus de images hebben geen alt tekst waardoor ze niet toegankelijk zijn voor de screenreader. 
+  
 
 </details>
 
