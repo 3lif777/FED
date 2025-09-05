@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Elif Yildirim
 
   #### Je startniveau:
   Blauw/rood
@@ -81,7 +81,7 @@ Responsive (en surface plane als er tijd voor is)
 
   Vragen: 
   - "Provide a unique title for each page" -> is dit een H1? 
-  - 
+  - Strong gwbruiken: mag dat of niet?
 
 
 </details>
