@@ -94,13 +94,11 @@ Responsive (en surface plane als er tijd voor is)
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
+https://miro.com/welcomeonboard/V1BSajh5eFZHUEVMTU5XdEZvb1ZranQwanlsZUEyQWlwdnh5ZE4wUWZzd2ZyN2s4ampNd0xRS1BaMkFuWkFRM2ZDQ3RzT042a1pVc3ZNSXJMZlFUa3lGSStGYlBsazVqVjFwR2R2aXVJOC9OeUU2TlhyUXFZM2c4S25mSUlpVXBzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=997982138408
+Link naar mijn schets!
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
