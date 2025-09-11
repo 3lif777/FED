@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-	box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -10,28 +12,31 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--main-text-color:#f4f6fb;
-	--color-background:#171719;
-	--background:#090909;
+	/* Dark mode */
+	--main-text-color: #f4f6fb;
+	--background: black;
+	--background-color: #171719;
 	--main-font: 'inter';
+
+	/* Light mode */
+	
+
+
+
+
 }
 
 
 
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-* {
+body {
 	background-color: var(--background);
 	color: var(--main-text-color);
 	font-family: var(--main-font);
 }
 
 section {
-	background-color: var(--color-background);
+	background-color: var(--background-color);
 }
 
 h1 {
@@ -40,23 +45,19 @@ h1 {
 
 section:first-of-type img {
 	width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
+	height: 100%;
+
 }
 
-/* jouw code */
-/* op de child 
-margin-left:auto
 
-voor bv img eerst en dan tekst: wel op de child
-flex-direction:column */
+/* Notes
+Voor de nav om iets aan de linker kant te houden: margin-left:auto; 
+Voor bv img eerst en dan tekst: wel op de child
+flex-direction:column
 
-twee thema;s met custom properties
-aria-current voor link?
-: is staat en :: gaat over :: content
+Twee themas!!
+s met custom properties aria-current voor link?: is staat en :: gaat over ::
 
-drie css bestanden:
-1 voor algemene dingen; fonts etc
-1 voor home
-1 voor andere pagina 
+Content drie css bestanden: 1 voor algemene dingen;
+fonts etc 1 voor home 1 voor andere pagina
+*/
