@@ -95,7 +95,6 @@ Responsive (en surface plane als er tijd voor is)
 
   ### de hele pagina: 
 https://miro.com/welcomeonboard/V1BSajh5eFZHUEVMTU5XdEZvb1ZranQwanlsZUEyQWlwdnh5ZE4wUWZzd2ZyN2s4ampNd0xRS1BaMkFuWkFRM2ZDQ3RzT042a1pVc3ZNSXJMZlFUa3lGSStGYlBsazVqVjFwR2R2aXVJOC9OeUU2TlhyUXFZM2c4S25mSUlpVXBzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=997982138408  Link naar mijn schets!
-
 Feedback op mijn breakdownschets:
 - img wordt een a
 - button een a
@@ -113,7 +112,6 @@ Feedback op mijn breakdownschets:
 
 - maak ook ss van de andere states: bv hamburgermenu
 
-- 
 
 
   ### dynamisch deel (bijv menu): 
