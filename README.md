@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Elif Yildirim
+  Sanne 't Hooft (vervangen door jouw naam)
 
   #### Je startniveau:
   Blauw/rood
@@ -81,7 +81,7 @@ Responsive (en surface plane als er tijd voor is)
 
   Vragen: 
   - "Provide a unique title for each page" -> is dit een H1? 
-  - Strong gwbruiken: mag dat of niet?
+  - 
 
 
 </details>
@@ -94,8 +94,26 @@ Responsive (en surface plane als er tijd voor is)
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-https://miro.com/welcomeonboard/V1BSajh5eFZHUEVMTU5XdEZvb1ZranQwanlsZUEyQWlwdnh5ZE4wUWZzd2ZyN2s4ampNd0xRS1BaMkFuWkFRM2ZDQ3RzT042a1pVc3ZNSXJMZlFUa3lGSStGYlBsazVqVjFwR2R2aXVJOC9OeUU2TlhyUXFZM2c4S25mSUlpVXBzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=997982138408
-Link naar mijn schets!
+https://miro.com/welcomeonboard/V1BSajh5eFZHUEVMTU5XdEZvb1ZranQwanlsZUEyQWlwdnh5ZE4wUWZzd2ZyN2s4ampNd0xRS1BaMkFuWkFRM2ZDQ3RzT042a1pVc3ZNSXJMZlFUa3lGSStGYlBsazVqVjFwR2R2aXVJOC9OeUU2TlhyUXFZM2c4S25mSUlpVXBzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=997982138408  Link naar mijn schets!
+Feedback op mijn breakdownschets:
+- img wordt een a
+- button een a
+- in de header allleen de dingen die op elke pagina zijn; zoals de nav, maar de img met h1 niet
+- voor hamburgermenu: nav/ul-/li/a en dan is het een button om alles open te doen
+- header/logo/a/button en dan een nav
+- van de homepage de logo de h1 maken of h1 toevoegen en die dan verbergen (want elke pagina moet een goeie h1 hebben)
+- de h1 wordt een h2
+- de buttons die ik had in de voormalige header moeten a's worden
+- de kleine stuk in de h2 kan je strong gebruiken
+- bij de eerste section met de ul: om het beter te maken kan je van de hele li een a maken
+- van die ?: een nav met een ul en dan li
+- tweede img: later met css komt de background img maar kan ook een img als ik met vol overtuiging het kan uitleggen
+- bij de volgende ul: gewoon een li met een img. hoeft geen p
+
+- maak ook ss van de andere states: bv hamburgermenu
+
+
+
   ### dynamisch deel (bijv menu): 
 
   ### wellicht nog een dynamisch deel (bijv filter): 
