@@ -81,9 +81,7 @@ Hier is content met linkjes naar andere pagina's
   - De color contrast is helemaal goed. 
 
   Vragen: 
-  - "Provide a unique title for each page" -> is dit een H1? 
-  - 
-
+  - "Provide a unique title for each page" -> is dit een H1?  -> antwoord: ja. Mijn website heeft dit niet!
 
 </details>
 
@@ -95,7 +93,7 @@ Hier is content met linkjes naar andere pagina's
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-https://miro.com/welcomeonboard/V1BSajh5eFZHUEVMTU5XdEZvb1ZranQwanlsZUEyQWlwdnh5ZE4wUWZzd2ZyN2s4ampNd0xRS1BaMkFuWkFRM2ZDQ3RzT042a1pVc3ZNSXJMZlFUa3lGSStGYlBsazVqVjFwR2R2aXVJOC9OeUU2TlhyUXFZM2c4S25mSUlpVXBzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=997982138408  Link naar mijn schets!
+https://miro.com/welcomeonboard/V1BSajh5eFZHUEVMTU5XdEZvb1ZranQwanlsZUEyQWlwdnh5ZE4wUWZzd2ZyN2s4ampNd0xRS1BaMkFuWkFRM2ZDQ3RzT042a1pVc3ZNSXJMZlFUa3lGSStGYlBsazVqVjFwR2R2aXVJOC9OeUU2TlhyUXFZM2c4S25mSUlpVXBzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=997982138408  Link naar mijn schets! <br>
 Feedback op mijn breakdownschets:
 - img wordt een a
 - button een a
@@ -112,15 +110,10 @@ Feedback op mijn breakdownschets:
 - bij de volgende ul: gewoon een li met een img. hoeft geen p
 - bij de een na laatste kan ik een section in een section doen
 - bij de footer moet de ul in een ul en daarna pas de li met a's
-
-
 - maak ook ss van de andere states: bv hamburgermenu
 
+Dynamische deel (bijv menu) en andere dynamische delen (bijv filter) kan je ook in dezelfde Miro board zien.
 
-
-  ### dynamisch deel (bijv menu): 
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
 
 </details>
 
@@ -134,36 +127,32 @@ Feedback op mijn breakdownschets:
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
 Ik wist soms niet wat voor code ik moest gebruiken voor specifieke content delen op mijn website. De foto hieronder is een voorbeeld. Ik kon maar niet vinden wat ik hier zou kunnen gebruiken, dus had het aan de 
 studentassistent gevraagd en die zei dat ik een section in een section kon doen. 
-<img src="readme-images/voorbeeld1.png" width="350px" alt="voorbeeld van stand van zaken">
-Daarna was ik al een beetje begonnen met mijn CSS, maar het lukte me niet om m'n achtergrond kleur goed te krijgen. Ik speelde daar veel mee en kon niet de oplossing vinden, dus vroeg ik dit ook aan de studentassisten. Ik had eerst mijn background color op een * gedaan, omdat ik dacht dat ik toch alles moest selecteren, zij vertelden me dat ik het juist alleen op de body moest doen, zodat het niet letterlijk alles pakt (want dit was het geval). Toen ik dit veranderd had, kregen de section de juiste achtergrond kleur, precies wat ik wou!
+<img src="readme-images/voorbeeld1.png" width="350px" alt="voorbeeld van stand van zaken"> <br>
+Daarna was ik al een beetje begonnen met mijn CSS, maar het lukte me niet om m'n achtergrond kleur goed te krijgen. Ik speelde daar veel mee en kon niet de oplossing vinden, dus vroeg ik dit ook aan de studentassisten. Ik had eerst mijn background color op een * gedaan, omdat ik dacht dat ik toch alles moest selecteren, zij vertelden me dat ik het juist alleen op de body moest doen, zodat het niet letterlijk alles pakt (want dit was het geval). Toen ik dit veranderd had, kregen de section de juiste achtergrond kleur, precies wat ik wou! <br>
 <img src="readme-images/voorbeeld2.png" width="350px" alt="voorbeeld van stand van zaken html">
 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-
+Mijn groepje zijn de papegaaien!
 Student 1 (Elif)
 - Ik wil sowieso mijn HTML even laten checken
+- Is mijn footer goed? 
 
-Student 2 ()
-- 
-Student 3 ()
-- 
-Student 4 ()
-
+De andere studenten vroegen vooral of de breakdownschets goed was en daar kregen ze veel feedback op.
+Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten vergeten. En ze hadden het over detail summary, maar dat gebruikt mijn website niet..
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Een ul kan geen titel hebben. De titel uit de ul halen en buiten de ul zetten als een heading.
 - Ik had bij m'n a's een alt text geschreven, maar dit hoeft helemaal niet zeiden de studentassistenten. Dus alle alt text bij de a's mogen weg.
-- Bij de alt text van de images moet ik de tekst veranderen naar een betere beschrijving. Ik kan eerst als text "image of judo", maar het woord image moet niet.
-
+- Bij de alt text van de images moet ik de tekst veranderen naar een betere beschrijving. Ik had eerst als text "image of judo", maar het woord image moet niet.
+- Bij de footer had een ul in een ul, omdat ik dat als tip had gekregen van een andere assistente, maar deze keer zeiden ze dat ik beter een nav kan gebruiken en daarin drie sections met een heading daarbinnen, omdat elke stuk een titel heeft.
+- En dan in de section een ul met daarin de li / a.
+- Ook bij de footer kan ik de laatste lijst in een aparte (dus niet in de nav) ul doen met daarin (bij de laatste regel met de apps) een ul. Hierin komen de li met de img's.
 <img src="readme-images/voortgangsgesprek1.png" width="350px" alt="voorbeeld van verslag meeting">
 <img src="readme-images/voortgangsgesprek2.png" width="350px" alt="voorbeeld van verslag meeting">
 
