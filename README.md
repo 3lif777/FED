@@ -16,7 +16,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-Elif Yildirim
+  Elif Yildirim
+
   #### Je startniveau:
   Blauw/rood
 
@@ -37,7 +38,8 @@ Responsive (en surface plane als er tijd voor is)
     https://smoothcomp.com/en
   #### Screenshot(s) van de eerste pagina (small screen): 
     Home pagina
-<img src="readme-images/sc1.png" width="350px" alt="home pagina"> Hier is content met linkjes naar andere pagina's
+<img src="readme-images/sc1.png" width="350px" alt="home pagina"> 
+Hier is content met linkjes naar andere pagina's
 <img src="readme-images/sc2.png" width="350px" alt="home pagina"> 
 
 
@@ -108,6 +110,9 @@ Feedback op mijn breakdownschets:
 - van die ?: een nav met een ul en dan li
 - tweede img: later met css komt de background img maar kan ook een img als ik met vol overtuiging het kan uitleggen
 - bij de volgende ul: gewoon een li met een img. hoeft geen p
+- bij de een na laatste kan ik een section in een section doen
+- bij de footer moet de ul in een ul en daarna pas de li met a's
+
 
 - maak ook ss van de andere states: bv hamburgermenu
 
@@ -130,16 +135,26 @@ Feedback op mijn breakdownschets:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik wist soms niet wat voor code ik moest gebruiken voor specifieke content delen op mijn website. De foto hieronder is een voorbeeld. Ik kon maar niet vinden wat ik hier zou kunnen gebruiken, dus had het aan de 
+studentassistent gevraagd en die zei dat ik een section in een section kon doen. 
+<img src="readme-images/voorbeeld1.png" width="350px" alt="voorbeeld van stand van zaken">
+Daarna was ik al een beetje begonnen met mijn CSS, maar het lukte me niet om m'n achtergrond kleur goed te krijgen. Ik speelde daar veel mee en kon niet de oplossing vinden, dus vroeg ik dit ook aan de studentassisten. Ik had eerst mijn background color op een * gedaan, omdat ik dacht dat ik toch alles moest selecteren, zij vertelden me dat ik het juist alleen op de body moest doen, zodat het niet letterlijk alles pakt (want dit was het geval). Toen ik dit veranderd had, kregen de section de juiste achtergrond kleur, precies wat ik wou!
+<img src="readme-images/voorbeeld2.png" width="350px" alt="voorbeeld van stand van zaken html">
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+
+Student 1 (Elif)
+- Ik wil sowieso mijn HTML even laten checken
+
+Student 2 ()
+
+Student 3 ()
+
+Student 4 ()
 
 
   ### Verslag van meeting
