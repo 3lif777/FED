@@ -153,6 +153,8 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
 - Bij de footer had een ul in een ul, omdat ik dat als tip had gekregen van een andere assistente, maar deze keer zeiden ze dat ik beter een nav kan gebruiken en daarin drie sections met een heading daarbinnen, omdat elke stuk een titel heeft.
 - En dan in de section een ul met daarin de li / a.
 - Ook bij de footer kan ik de laatste lijst in een aparte (dus niet in de nav) ul doen met daarin (bij de laatste regel met de apps) een ul. Hierin komen de li met de img's.
+- Over mijn fonts: ik had een bestand gevonden van de website waarin alle fonts stonden en ik kreeg als feedback te horen dat ik de gene die dubbel zijn eruit kan halen. Een nieuwe CSS bestand moet maken met daarin de fonts. fonts.css. @fontface en dan bij de headings aangeven font-family en font-weight.
+- + de foto op m'n github veranderen naar eentje zonder een bullet point!
 <img src="readme-images/voortgangsgesprek1.png" width="350px" alt="voorbeeld van verslag meeting">
 <img src="readme-images/voortgangsgesprek2.png" width="350px" alt="voorbeeld van verslag meeting">
 
