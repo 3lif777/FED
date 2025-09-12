@@ -151,19 +151,24 @@ Student 1 (Elif)
 - Ik wil sowieso mijn HTML even laten checken
 
 Student 2 ()
-
+- 
 Student 3 ()
-
+- 
 Student 4 ()
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- Een ul kan geen titel hebben. De titel uit de ul halen en buiten de ul zetten als een heading.
+- Ik had bij m'n a's een alt text geschreven, maar dit hoeft helemaal niet zeiden de studentassistenten. Dus alle alt text bij de a's mogen weg.
+- Bij de alt text van de images moet ik de tekst veranderen naar een betere beschrijving. Ik kan eerst als text "image of judo", maar het woord image moet niet.
+
+<img src="readme-images/voortgangsgesprek1.png" width="350px" alt="voorbeeld van verslag meeting">
+<img src="readme-images/voortgangsgesprek2.png" width="350px" alt="voorbeeld van verslag meeting">
+
+
+
 
 </details>
 
