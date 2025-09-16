@@ -1,65 +1,56 @@
-/**************/
+
 /* CSS REMEDY */
-/**************/
 *,
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+/* Custom properties */
 :root {
 	/* Dark mode */
 	--main-text-color: #f4f6fb;
+	--text-color-dark: #484848;
 	--background: black;
 	--background-color: #171719;
-	--main-font: 'inter';
+	--event-button-color: #2C3EDC;
+	--wazige-button-color: rgba(244, 246, 251, 0.1);
+	--light-button-color: rgba(255, 255, 255, 0.8);
+	--heading-yellow: #F0CE57;
+
 
 	/* Light mode */
-	
-
-
-
-
 }
 
+
+
+/* Fonts */
+@font-face {
+	font-family: 'Inter';
+	src:local('./fonts/inter.woff2') format('woff2');
+	/* src:url("D:/Downloads/School/FEDHerkansing/fonts/inter.woff2"); */
+}
 
 
 
 body {
 	background-color: var(--background);
 	color: var(--main-text-color);
-	font-family: var(--main-font);
-}
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
 
-section {
-	background-color: var(--background-color);
 }
 
 h1 {
-	visibility: hidden;
-}
-
-section:first-of-type img {
-	width: 100%;
-	height: 100%;
-
-}
-
-
-section:nth-of-type(2) img {
-	width: 100%;
-}
-
-section:nth-of-type(3) img {
-	width: 100%;
-}
-
-section:nth-of-type(4) video {
-width: 100%;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	white-space: nowrap;
+	/* hierdoor is het wel visible voor de screenreader en kan flexbox gebruiken op de andere elementen in de header */
 }
 
 

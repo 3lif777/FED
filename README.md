@@ -150,7 +150,7 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
 - Een ul kan geen titel hebben. De titel uit de ul halen en buiten de ul zetten als een heading.
 - Ik had bij m'n a's een alt text geschreven, maar dit hoeft helemaal niet zeiden de studentassistenten. Dus alle alt text bij de a's mogen weg.
 - Bij de alt text van de images moet ik de tekst veranderen naar een betere beschrijving. Ik had eerst als text "image of judo", maar het woord image moet niet.
-- Bij de footer had een ul in een ul, omdat ik dat als tip had gekregen van een andere assistente, maar deze keer zeiden ze dat ik beter een nav kan gebruiken en daarin drie sections met een heading daarbinnen, omdat elke stuk een titel heeft.
+- Bij de footer had ik een ul in een ul, omdat ik dat als tip had gekregen van een andere assistente, maar deze keer zeiden ze dat ik beter een nav kan gebruiken en daarin drie sections met een heading daarbinnen, omdat elke stuk een titel heeft.
 - En dan in de section een ul met daarin de li / a.
 - Ook bij de footer kan ik de laatste lijst in een aparte (dus niet in de nav) ul doen met daarin (bij de laatste regel met de apps) een ul. Hierin komen de li met de img's.
 - Over mijn fonts: ik had een bestand gevonden van de website waarin alle fonts stonden en ik kreeg als feedback te horen dat ik de gene die dubbel zijn eruit kan halen. Een nieuwe CSS bestand moet maken met daarin de fonts. fonts.css. @fontface en dan bij de headings aangeven font-family en font-weight.
