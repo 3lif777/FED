@@ -164,7 +164,7 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
 </details>
 
 
-
+<!-- bij de tweede html pagina; input met radio buttons -->
 
 
 ## Voortgang 2 (week 3)

@@ -12,13 +12,15 @@
 :root {
 	/* Dark mode */
 	--main-text-color: #f4f6fb;
+	--secondary-text-color: rgba(244, 246, 251, 0.5);
+	--tertairy-text-color: #090909;
 	--text-color-dark: #484848;
 	--background: black;
 	--background-color: #171719;
 	--event-button-color: #2C3EDC;
 	--wazige-button-color: rgba(244, 246, 251, 0.1);
 	--light-button-color: rgba(255, 255, 255, 0.8);
-	--heading-yellow: #F0CE57;
+	--heading-yellow: #DAA035;
 
 
 	/* Light mode */

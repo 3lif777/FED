@@ -29,13 +29,15 @@ header button {
 
 header button span {
 	display: block;
-	width: 18px;
-	height: 2px;
+	width: 1.5em;
+	height: 0.1em;
 
     background: var(--main-text-color);
-    border-radius: 3px;
+    border-radius: 0.1em;
 	margin: 4px 0;
 }
+
+
 
 header a:first-of-type {
 	margin-right: auto;
@@ -50,23 +52,23 @@ header a:nth-of-type(2) {
 	font-size: .85rem;
 }
 
-nav {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	translate:-100%;
-	transition: 1s;
-}
+	nav {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		translate:-100%;
+		transition: 1s;
+	}
 
-nav.is-open {
-	translate: 0%;
-	background-color: var(--background-color);
-	text-decoration: none;
+	nav.is-open {
+		translate: 0;
+		background-color: var(--background-color);
+		text-decoration: none;
 
-}
-/* ::before en ::after? */
+	}
+	/* ::before en ::after? */
 
 
 
@@ -156,7 +158,7 @@ section:nth-of-type(2) h2 {
 	text-align: center;
 	margin: 5rem 1.2rem 3rem 1.2rem;
 
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	line-height: 1.3;
 	font-weight: 500;
 	/* is dit allemaal goed? */
@@ -169,29 +171,49 @@ section:nth-of-type(2) h2 strong {
 
 section:nth-of-type(2) ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 	list-style: none;
+
 	padding: 0;
 	margin: 0;
-
-	text-align: center;
-
-
 }
 
 
 section:nth-of-type(2) ul li a {
+	position: relative;
+	aspect-ratio: 5 / 3; 
+	display: block ;
+	overflow: hidden;
+	
+}
+
+section:nth-of-type(2) ul li a p {
 	text-decoration: none;
+	font-size: 1.3rem;
 	color: var(--main-text-color);
 
-
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	
 }
 
 
 section:nth-of-type(2) ul li a img {
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: cover;
 	display: block;
+
+}
+/* ::before en ::after is een soort van laag/div waarin je elementen kan veranderen */
+section:nth-of-type(2) ul li a::before {
+	content: "";
+	position: absolute;
+
+	inset: 0; /* top:0; left:0; right:0; bottom:0 */
+	background: rgba(0,0,0,0.7); /* donker laagje */
 }
 
 
@@ -199,66 +221,138 @@ section:nth-of-type(2) ul li a img {
 
 /* section 3 */
 section:nth-of-type(3) {
+	position: relative;
+	margin: 0 1.5rem;
+
 
 }
 
-section:nth-of-type(3) > img {
+section:nth-of-type(3)::before {
+	content: "";
+	display: block;
 	width: 100%;
+	aspect-ratio: 1297 / 568; /* verhouding van je afbeelding */
+	background: 
+	linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,8) 100%),
+		url("../images/bracketillustration.png");
+	background-size: cover;
+	background-position: center;
+
 
 }
-
-
 
 section:nth-of-type(3) > h2 {
 
 	color: var(--main-text-color);
+	font-size: 2rem;
+	font-weight: 250;
+	position: absolute;
+	margin-top: -7rem;
+
+	z-index: 2;
+
+	width: 100%;
 	text-align: center;
 
+	
+
 }
+
 
 section:nth-of-type(3) ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-flow: row;
+	max-width: calc(4 * 250px + 3 * 1rem);
+
+
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	gap: 0.3rem;
 
 	text-align: center;
+
+	
 }
 
 section:nth-of-type(3) ul li {
+	color: var(--secondary-text-color);
+	font-size: 1rem;
+	font-weight: 500;
+
+	padding-bottom: 1rem;
+
+
 	background-color: var(--background-color);
 	display: grid;
 	grid-column: auto;
+	position: relative;
+
 }
+
+section:nth-of-type(3) ul li:last-of-type {
+	grid-column: 1 / -1;
+
+}
+
+
+
 
 section:nth-of-type(3) ul li img {
+	height:auto;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 
 }
+
+
 
 
 /* section 4 */
-section:nth-of-type(4) video {
-	width: 50%;
+section:nth-of-type(4) {
+	background-color: var(--heading-yellow);
+	border-radius: 1rem;
+	padding-top: 3rem;
+
+	margin: 1rem;
+	color: var(--tertairy-text-color);
 
 }
+
+section:nth-of-type(4) h2 {
+	max-width: 18.75rem;
+	margin: 2rem auto 1rem auto;
+
+	font-size: 2.2rem;
+	font-weight: 500;
+
+	text-align: center;
+}
+
+section:nth-of-type(4) ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+section:nth-of-type(4) ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
 
 section:nth-of-type(4) img {
-	width: 50%;
-
+	height:auto;
+	display: block;
+	margin: auto;
 }
 
-
-/* section 5 */
-section:nth-of-type(5) {
-	background-color: var(--heading-yellow);
-}
-
-
-
-/* section 6 */
 
