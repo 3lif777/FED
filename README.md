@@ -111,6 +111,14 @@ Feedback op mijn breakdownschets:
 - bij de een na laatste kan ik een section in een section doen
 - bij de footer moet de ul in een ul en daarna pas de li met a's
 - maak ook ss van de andere states: bv hamburgermenu
+- eerst de content en dan de img
+- a href kan # gebruiken
+- een link mag niet in een button en button niet in een link
+- voor de nav om iets aan de linker kant te houden: margin-left:auto; 
+- Voor bv img eerst en dan tekst: wel op de child
+- flex-direction:column
+- Content drie css bestanden: 1 voor algemene dingen; fonts etc 1 voor home 1 voor andere pagina
+
 
 Dynamische deel (bijv menu) en andere dynamische delen (bijv filter) kan je ook in dezelfde Miro board zien.
 
@@ -177,22 +185,106 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Elke student wou eerst de html/breakdownschets laten checken
+  We hadden het over een broodkruimelmenu, nav ul li a. Handig om te weten, maar was niet van toepassing voor mijn website! emmet cheat sheet, een super handige tool voor de shortcuts! line height in een ul, specifieke regels hoog. overflow hidden, scroll. dit maakt de lijst scrollbaar! background-image: linear-gradient () elke kleur op een nieuwe regel zodat je kan zien wat je hebt gedaan. gevraagd hoe ik de laatste li of img aan de zijkant krijgt als het scherm groter wordt en het antwoord staat hier beneden
+
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - de nav en andere a's in m'n header moeten naar de main/style.css, omdat het ook op de andere pagina's voorkomt
+  - gevraagd hoe ik de laatste li of img aan de zijkant krijgt als het scherm groter wordt 
+  - we hebben het gehad over de gradient
+  - extra content toevoegen zonder extra html
+  - mask-image maakt een extra laag
+  - en andere tips die ik kan gebruiken en die allemaal hieronder staan
+
+  background-image: 
+    linear-gradient (
+      black 0,
+      transparent 1em valc(100% - 1em),
+      black
+  );
+
+  dit is een stukje waar je content mee kan toevoegen zonder je extra html ervoor typt
+  ul::before {
+    content:"hoofdstuk: ";
+  }
+
+  wat kleur heeft zie je wel en wat transparent is zie je niet, dit doet een mask.
+  mask-image: linear-gradient (
+    transparent,
+    pink 1em valc(100% - 1em),
+    transparent
+  )
+  dit zijn trouwens allemaal in de ul
+
+
+  iets aanpassen als iets groter wordt
+  img{
+    max-width: 100% 
+  } dit bij de main css, alle plaatjes worden nooit groter dan de container
+
+  section{
+    display:grid;
+    justify-items: center;
+  }
+
+  section img {
+    width: 50%;
+  }
+
+  als je scherm groter wordt, dan gebeurd er iets. en deze moeten allemaal onder staan in je css, want je begint met small screen, zet ze bij elkaar waar het over gaat.
+  @media (width > 32em) {
+    section {
+      background-color: pink;
+      grid-template-columns: 1fr 1fr;
+    }
+    section img {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      grid-row-start: 1;
+      grid-row-end: 4;
+
+  <!-- kan width als je wilt dat de img groter wordt -->
+    align-self:center  }
+  }
+
+  position relative en absolute voor tekst op img veranderen naar display
+  img {
+    max-width: 100%;
+  }
+
+  section {
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+  }
+  dit is 1 manier
+
+  section {
+    display: grid;
+  }
+
+  h2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 1;
+
+    align-self: end; dan gaat die naar de onderkant
+  }
+
+  img {
+    grid-column-start: 1;
+    grid-row-start: 1; 
+  }
+  en dit is een ander manier
 
 </details>
 

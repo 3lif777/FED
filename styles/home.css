@@ -1,79 +1,4 @@
 
-/* header en nav */
-header {
-	position: sticky; 
-	top: 0;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	gap: 1rem;
-	padding: 1rem;        
-	background: #000;  /* anders lijkt het te “zweven” */
-	z-index: 1000;  
-}
-
-header img {
-	width: 10rem;
-	max-width: 100%;
-	height: auto;
-}
-
-header button {
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding: 0;
-}
-
-header button span {
-	display: block;
-	width: 1.5em;
-	height: 0.1em;
-
-    background: var(--main-text-color);
-    border-radius: 0.1em;
-	margin: 4px 0;
-}
-
-
-
-header a:first-of-type {
-	margin-right: auto;
-}
-
-header a:nth-of-type(2) {
-	text-decoration: none;
-	color: var(--text-color-dark);
-	background-color: var(--light-button-color);
-	border-radius: 1rem;
-	padding: .35rem .65rem .35rem .65rem;
-	font-size: .85rem;
-}
-
-	nav {
-		position: fixed;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		translate:-100%;
-		transition: 1s;
-	}
-
-	nav.is-open {
-		translate: 0;
-		background-color: var(--background-color);
-		text-decoration: none;
-
-	}
-	/* ::before en ::after? */
-
-
-
-
-
 /* section 1 */
 section:nth-of-type(1) {
 	position: relative;
@@ -151,7 +76,7 @@ section:nth-of-type(1) a {
 
 
 /* section 2 */
-section:nth-of-type(2) h2 {
+section:nth-of-type(2) > h2 {
 	color: var(--heading-yellow);
 	color: var(--main-text-color);
 
@@ -169,17 +94,18 @@ section:nth-of-type(2) h2 strong {
 	font-weight: 500;
 }
 
-section:nth-of-type(2) ul {
+section:nth-of-type(2) > ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 	list-style: none;
 
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 
 
-section:nth-of-type(2) ul li a {
+section:nth-of-type(2) > ul > li > a {
 	position: relative;
 	aspect-ratio: 5 / 3; 
 	display: block ;
@@ -187,7 +113,7 @@ section:nth-of-type(2) ul li a {
 	
 }
 
-section:nth-of-type(2) ul li a p {
+section:nth-of-type(2) > ul > li > a > p {
 	text-decoration: none;
 	font-size: 1.3rem;
 	color: var(--main-text-color);
@@ -208,13 +134,65 @@ section:nth-of-type(2) ul li a img {
 
 }
 /* ::before en ::after is een soort van laag/div waarin je elementen kan veranderen */
-section:nth-of-type(2) ul li a::before {
+section:nth-of-type(2) > ul > li > a::before {
 	content: "";
 	position: absolute;
 
 	inset: 0; /* top:0; left:0; right:0; bottom:0 */
 	background: rgba(0,0,0,0.7); /* donker laagje */
 }
+
+
+
+
+section:nth-of-type(2) ul li:last-of-type {
+	background-color: var(--background-color);
+	height: 100%;
+}
+
+section:nth-of-type(2) ul li:last-of-type h3 {
+	color: var(--secondary-text-color);
+	font-size: 1.3rem;
+	font-weight: 500;
+
+	text-align: center;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+section:nth-of-type(2) ul li:last-of-type nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 0.5rem;
+}
+
+section:nth-of-type(2) ul li:last-of-type nav ul {
+	list-style: none;
+	max-width: 12rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+section:nth-of-type(2) ul li:last-of-type nav ul li a {
+	color: var(--secondary-text-color);
+	background: var(--gray-background-color);
+
+	text-decoration: none;
+	font-size: 0.8rem;
+	border-radius: 1rem;
+
+	display: inline-block;
+	padding: 0.1rem 0.4rem;
+	margin: 0.1rem;
+}
+
+
 
 
 
@@ -291,19 +269,73 @@ section:nth-of-type(3) ul li {
 
 }
 
-section:nth-of-type(3) ul li:last-of-type {
-	grid-column: 1 / -1;
-
-}
-
-
-
 
 section:nth-of-type(3) ul li img {
 	height:auto;
 	display: block;
 	margin: auto;
 
+
+}
+
+section:nth-of-type(3) ul li:last-of-type {
+	grid-column: 1 / -1;
+
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 1rem;
+	align-items: start;
+
+	
+}
+
+
+
+section:nth-of-type(3) ul li:last-of-type h2 strong {
+	color: var(--main-text-color);
+	font-weight: normal;
+}
+
+section:nth-of-type(3) ul li:last-of-type h2 {
+	color: var(--secondary-text-color);
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: 500;
+	width: 15rem;
+
+	text-align: left;
+}
+
+section:nth-of-type(3) ul li:last-of-type p {
+	color: var(--secondary-text-color);
+	width: 25rem;
+	font-size: 1rem;
+	font-weight: 500;
+
+	text-align: left;
+
+}
+
+section:nth-of-type(3) ul li:last-of-type a {
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	font-size: 1.3rem;
+	cursor: pointer;
+
+	text-align: left;
+}
+
+section:nth-of-type(3) ul li:last-of-type img {
+	grid-column: 2;
+	grid-row: 1 / span 3;
+	width: 10rem;
+	height: auto;
+}
+
+section:nth-of-type(2) ul li h2,
+section:nth-of-type(2) ul li p,
+section:nth-of-type(2) ul li a {
+  grid-column: 1; /* text stack stays in first column */
 }
 
 
@@ -315,16 +347,15 @@ section:nth-of-type(4) {
 	border-radius: 1rem;
 	padding-top: 3rem;
 
-	margin: 1rem;
+	margin: 2rem;
 	color: var(--tertairy-text-color);
-
 }
 
 section:nth-of-type(4) h2 {
-	max-width: 18.75rem;
+	max-width: 16rem;
 	margin: 2rem auto 1rem auto;
 
-	font-size: 2.2rem;
+	font-size: 2rem;
 	font-weight: 500;
 
 	text-align: center;
@@ -344,9 +375,19 @@ section:nth-of-type(4) ul li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
+	line-height: 1.2;
 	gap: 0.5rem;
 	margin-bottom: 1rem;
+	max-width: 17rem;
 }
+
+section:nth-of-type(4) ul li p {
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0;
+}
+
 
 
 section:nth-of-type(4) img {
@@ -356,3 +397,10 @@ section:nth-of-type(4) img {
 }
 
 
+/* aan chatgpt gevraagd hoe ik mijn svg's groter kon maken, omdat het mij niet lukte. */
+section:nth-of-type(4) svg {
+	width: 52px;
+	height: 52px;
+	margin-right: 10px;
+	flex-shrink: 0;
+}
