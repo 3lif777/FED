@@ -6,7 +6,7 @@ openMenuButton.addEventListener("click", geOpendeMenu);
 
 function geOpendeMenu() {
     let deNav = document.querySelector("header nav");
-    deNav.classList.add("is-open");
+    deNav.classList.toggle("is-open");
 
 }
 

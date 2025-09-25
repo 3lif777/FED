@@ -1,0 +1,11 @@
+main section:nth-of-type(3) ul {
+
+}
+
+main section:nth-of-type(3) ul a > img {
+    width: 20rem;
+}
+
+main section:nth-of-type(3) ul h4 > img {
+    width: 1rem;
+}
