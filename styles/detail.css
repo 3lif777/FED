@@ -117,7 +117,6 @@ main section:nth-of-type(2) > h2 {
     white-space: nowrap;
     border: 0;
 }
-/* chat: clip defines the visible region of an absolutely positioned element */
 
 
 /* section 2 ul 1*/
@@ -277,7 +276,6 @@ main section:nth-of-type(2) form select:focus {
 
 
 
-
 /* section 3 */
 main section:nth-of-type(3) {
     background-color: var(--background-color);
@@ -314,6 +312,13 @@ main section:nth-of-type(3) select {
     color: #a5a5a5;
 
 }
+
+main section:nth-of-type(3) select:hover {
+    border-color: #7fb4e2;
+    outline: none;
+    
+}
+
 
 main section:nth-of-type(3) ul {
     list-style: none;
@@ -442,4 +447,10 @@ main section:nth-of-type(3) ul > li > a > article {
     }
 }
 
+main section:nth-of-type(3) ul li a:hover {
+    border: 2px solid var(--lighter-gray);
+}
+main section:nth-of-type(3) ul li a:focus {
+        border: 2px solid var(--blue-event-button);
 
+}

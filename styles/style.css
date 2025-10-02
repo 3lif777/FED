@@ -25,30 +25,67 @@
 
 
 	--event-button-color: #2C3EDC;
+	--hover-dark-blue: #2838C6;
+	--active-blue: #2332B0;
 	--blue-event-button: #179de0;
 	--blue-event-hover: #20739c;
 
 
 	--wazige-button-color: rgba(244, 246, 251, 0.1);
+	--hover-wazig: rgba(63, 64, 65, 0.178);
 	--light-button-color: rgba(255, 255, 255, 0.8);
+	--hover-gray: #B0B1B5;
+	--hover-dark-gray: ;
 
 
 	--heading-yellow: #DAA035;
 
 	--form-color: #ffff;
 
-
-
-
-	/* Light mode */
 }
 
 
 
+@media (prefers-color-scheme: light) {
+	:root {
+		--main-text-color: rgba(255, 255, 255, 90%);
+	--secondary-text-color: rgba(244, 246, 251, 0.5);
+	--tertairy-text-color: #090909;
+	--text-color-dark: #484848;
+
+
+	--background: black;
+	--background-color: #171719;
+	--gray-background-color: rgba(231, 234, 255, 0.1);
+	--lighter-gray:  rgba(231, 234, 255, 0.37);
+	--white-background: #fff;
+
+
+	--event-button-color: #2C3EDC;
+	--hover-dark-blue: #2838C6;
+	--active-blue: #2332B0;
+	--blue-event-button: #179de0;
+	--blue-event-hover: #20739c;
+
+
+	--wazige-button-color: rgba(244, 246, 251, 0.1);
+	--hover-wazig: rgba(63, 64, 65, 0.178);
+	--light-button-color: rgba(255, 255, 255, 0.8);
+	--hover-gray: #B0B1B5;
+	--hover-dark-gray: ;
+
+
+	--heading-yellow: #DAA035;
+
+	--form-color: #ffff;
+
+	}
+}
+
 /* Fonts */
 @font-face {
 	font-family: 'Inter';
-	src:local('./fonts/inter.woff2') format('woff2');
+	src: local('./fonts/inter.woff2') format('woff2');
 	/* src:url("D:/Downloads/School/FEDHerkansing/fonts/inter.woff2"); */
 }
 
@@ -83,7 +120,6 @@ header {
 	align-items: center;
 
 	gap: 1rem;
-	padding: 1rem;        
 	background: #000;  /* anders lijkt het te “zweven” */
 	z-index: 1000;  
 }
@@ -92,16 +128,22 @@ header img {
 	width: 12rem;
 	max-width: 100%;
 	height: auto;
+	margin-left: 1rem;
 }
 
 header button {
 	background: none;
 	border: none;
 	cursor: pointer;
-	padding: 0;
+	padding: 1rem;
+
 
 	position: relative;
 	z-index: 1000;
+}
+
+header button:hover {
+	background-color: var(--lighter-gray);
 }
 
 header button span {
@@ -128,6 +170,12 @@ header a:nth-of-type(2) {
 	font-size: .85rem;
 }
 
+header a:nth-of-type(2):hover {
+	background-color: var(--lighter-gray);
+	color: var(--main-text-color);
+}
+
+
 	header nav {
 		position: fixed;
 		top: 0;
@@ -147,7 +195,6 @@ header a:nth-of-type(2) {
 		top: 3.75rem;
 
 	}
-	/* ::before en ::after? */
 
 
 
@@ -203,6 +250,29 @@ header nav section:nth-of-type(3) li {
 	align-items: center;
 }
 
+header nav.is-open li:hover {
+	background-color: var(--lighter-gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 55rem ) {
+	footer > img{
+		padding-top: 3rem;
+	}
+
+	footer {
+		padding-bottom: 1rem;
+	}
+}
 
 footer {
 	background-color: var(--background-color);
@@ -217,7 +287,7 @@ footer > img {
 	width: 10rem;
 	display: block;
 	margin: 0 auto 1.5rem auto;
-	padding-top: 2rem;
+	cursor: pointer;
 }
 
 footer nav {
@@ -279,5 +349,92 @@ footer > ul li:last-child img {
 	width: 1.5rem;
 	height: 1.5rem;
 	filter: invert(60%);
-	margin-bottom: 2rem;
+}
+
+@media (width > 55rem ) {
+	footer {
+		background-color: var(--background-color);
+		width: 100%;
+
+
+		display: grid;
+		grid-template-columns: auto repeat(3, 1fr);
+		grid-template-rows: auto auto;
+
+
+		gap: 2rem;
+		margin: auto;
+		padding: 3rem 3rem 0 3rem ;
+
+		box-sizing: border-box;
+}
+	footer > img {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+
+		
+		justify-self: start;
+		align-self: start;
+		max-width: 15rem;
+
+	}
+
+	footer nav {
+		grid-column: 2 / 5;
+		grid-row: 1 / 2;
+
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+
+		
+	}
+
+
+footer nav  {
+	max-width: 50rem;
+	justify-self: center;
+
+}
+
+	footer nav section {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+	}
+
+	footer > ul {
+		grid-column: 1 / 5;
+		grid-row: 2 / 3;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+
+		max-width: 55rem;
+		margin: 0 auto;
+	}
+
+
+	footer > ul li:last-child {
+    display: flex;
+    gap: 1rem;
+	
+	}
+}
+
+/* hover */
+footer > ul a:hover {
+	color: var(--main-text-color);
+}
+footer > ul li:last-child img:hover {
+		filter: invert(100%);
+}
+
+footer nav a:hover {
+	color: var(--secondary-text-color);
+
 }
