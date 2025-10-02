@@ -323,7 +323,7 @@ main section:nth-of-type(3) select:hover {
 main section:nth-of-type(3) ul {
     list-style: none;
     padding: 0 2rem 0 2rem;
-    margin: 0;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -453,4 +453,28 @@ main section:nth-of-type(3) ul li a:hover {
 main section:nth-of-type(3) ul li a:focus {
         border: 2px solid var(--blue-event-button);
 
+}
+
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--light-mode-background);
+    }
+    
+    main section:nth-of-type(1) {
+        background-color: var(--light-mode-background);
+    }
+
+    main section:nth-of-type(1) ul {
+        background-color: var(--light-mode-accents);
+    }
+
+    main section:nth-of-type(2) {
+        background-color: var(--light-mode-accents);
+    }
+
+    main section:nth-of-type(3) {
+        background-color: var(--light-mode-background);
+
+    }
 }

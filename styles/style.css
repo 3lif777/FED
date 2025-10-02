@@ -10,7 +10,6 @@
 
 /* Custom properties */
 :root {
-	/* Dark mode */
 	--main-text-color: rgba(255, 255, 255, 90%);
 	--secondary-text-color: rgba(244, 246, 251, 0.5);
 	--tertairy-text-color: #090909;
@@ -42,45 +41,15 @@
 
 	--form-color: #ffff;
 
+
+	--light-mode-background: #8a8888 ;
+	--light-mode-accents: #c9c6c6;
+
 }
 
 
 
-@media (prefers-color-scheme: light) {
-	:root {
-		--main-text-color: rgba(255, 255, 255, 90%);
-	--secondary-text-color: rgba(244, 246, 251, 0.5);
-	--tertairy-text-color: #090909;
-	--text-color-dark: #484848;
 
-
-	--background: black;
-	--background-color: #171719;
-	--gray-background-color: rgba(231, 234, 255, 0.1);
-	--lighter-gray:  rgba(231, 234, 255, 0.37);
-	--white-background: #fff;
-
-
-	--event-button-color: #2C3EDC;
-	--hover-dark-blue: #2838C6;
-	--active-blue: #2332B0;
-	--blue-event-button: #179de0;
-	--blue-event-hover: #20739c;
-
-
-	--wazige-button-color: rgba(244, 246, 251, 0.1);
-	--hover-wazig: rgba(63, 64, 65, 0.178);
-	--light-button-color: rgba(255, 255, 255, 0.8);
-	--hover-gray: #B0B1B5;
-	--hover-dark-gray: ;
-
-
-	--heading-yellow: #DAA035;
-
-	--form-color: #ffff;
-
-	}
-}
 
 /* Fonts */
 @font-face {
@@ -120,7 +89,7 @@ header {
 	align-items: center;
 
 	gap: 1rem;
-	background: #000;  /* anders lijkt het te “zweven” */
+	background: var(--background);  /* anders lijkt het te “zweven” */
 	z-index: 1000;  
 }
 
@@ -193,10 +162,14 @@ header a:nth-of-type(2):hover {
 	header nav.is-open {
 		transform: translateX(0);
 		top: 3.75rem;
+		
 
 	}
 
-
+header nav.is-open li{
+	background-color: var(--gray-background-color);
+	cursor: pointer;
+}
 
 header nav ul li {
 	padding-top: 0.8rem;
@@ -258,8 +231,42 @@ header nav.is-open li:hover {
 
 
 
+@media (prefers-color-scheme: light) {
+	header {
+		background-color: var(--white-background);
+	}
+
+	header img {
+		filter: invert(100%);
+
+	}
+
+	header a:nth-of-type(2) {
+		background-color:var(--background-color) ;
+		color: var(--main-text-color);
+	}
+
+	header button span {
+		background: var(--background);
+	}
+
+	header a:nth-of-type(2):hover {
+		background-color: var(--hover-gray);
+	}
 
 
+	header nav.is-open {
+		background-color: var(--light-mode-background);
+	}
+	header nav.is-open li:hover {
+		background-color: var(--light-mode-accents);
+	}
+
+	header nav.is-open img {
+		filter: invert(10%);
+
+}
+}
 
 
 
@@ -437,4 +444,42 @@ footer > ul li:last-child img:hover {
 footer nav a:hover {
 	color: var(--secondary-text-color);
 
+}
+
+
+@media (prefers-color-scheme: light) {
+	footer {
+		background-color: var(--main-text-color);
+
+	}
+
+	footer > img {
+		filter: invert(100%);
+	}
+
+	footer nav section h3 {
+		color: var(--background-color);
+	}
+
+	footer nav section ul li a {
+		color: var(--background);
+	}
+
+	footer > ul li a {
+		color: var(--background);
+	}
+
+	footer > ul li:last-child img {
+		filter: invert(0%);
+
+
+	}
+
+	footer ul li a:hover {
+		color: var(--text-color-dark);
+	}
+
+	footer > ul li:last-child img:hover {
+		filter: invert(50%);
+	}
 }

@@ -59,7 +59,7 @@ main section:nth-of-type(1) a:first-of-type {
 main section:nth-of-type(1) a:last-of-type {
 	text-decoration: none;
 	color: var(--main-text-color);
-	background-color: var(wazige-button-color);
+	background-color: var(--wazige-button-color);
 	backdrop-filter: blur(0.5rem);
 	
 }
@@ -559,4 +559,47 @@ main section:nth-of-type(4) svg {
 
 }
 
+}
+
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--light-mode-background);
+	}
+
+	main section:nth-of-type(2) ul li:last-of-type {
+		background-color: var(--light-mode-accents);
+		
+	}
+	main section:nth-of-type(2) ul li:last-of-type h3 {
+		color: var(--tertairy-text-color);
+	}
+
+	main section:nth-of-type(2) ul li:last-of-type nav ul li a {
+		color: var(--tertairy-text-color);
+		background-color: var(--lighter-gray);
+	}
+	main section:nth-of-type(2) ul li:last-of-type nav ul li a:hover {
+		background-color: var(--main-text-color);
+	}
+
+
+	
+
+	main section:nth-of-type(3)::before {
+		content: "";
+		display: block;
+		width: 100%;
+		aspect-ratio: 1297 / 568;
+
+		background: 
+			linear-gradient(to top, #8a8888 0%, rgba(138,136,136,0) 55%),
+			linear-gradient(to bottom, #8a8888 0%, rgba(138,136,136,0) 25%),
+			url("../images/bracketillustration.png");
+    
+		background-size: cover;
+		background-position: center;
+	}
+
+	
 }
