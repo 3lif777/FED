@@ -300,6 +300,17 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+- er is nu een titel op elke pagina
+- gevalideerde code
+- visible focus en hover bij links
+- toegankelijke buttons en a's
+- heeft 1 h1 per pagina (had er eerst 2 op home)
+- gebruik headings in logische volgorde
+- alles van de originele website was gedaan met divs, ik heb sections en ul gebruikt
+- er waren img die geen alt bevatten, nu heeft elke img een alt
+- ze hadden geen button element voor een button, nu wel!
+- originele website had geen light mode, maar nu wel!
+- 
 </details>
 
 
@@ -377,8 +388,36 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+ 1. /* https://medium.com/@charlotte.pearce1984/using-css-filters-to-change-svg-colours-2b4887c1a5db */
+2.  /* Hide radio buttons chatgpt*/
+3. /* chat: clip defines the visible region of an absolutely positioned element */
+4. /* https://angel-rs.github.io/css-color-filter-generator/ */
+5. /* chat gevraagd hoe ik de form responsive kan maken met de indeling */
+6.  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio -->
+7. https://www.w3schools.com/html/html_form_elements.asp -->
+8. /* chatgpt; items fill the whole screen, but still never go beyond 4 per row*/
+9. /* aan chatgpt gevraagd hoe ik mijn svg's groter kon maken, omdat het mij niet lukte. */
+10. https://www.w3schools.com/css/css_pseudo_classes.asp
+11. https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+12. https://developer.mozilla.org/en-US/docs/Web/CSS/:state
+12. https://www.w3schools.com/html/html5_semantic_elements.asp
+13. https://www.w3schools.com/css/css3_image_center.asp
+14. https://www.svgrepo.com/
+15. https://www.w3schools.com/cssref/pr_dim_line-height.php
+16. https://www.w3schools.com/tags/att_input_type_date.asp
+17. https://www.w3schools.com/html/html_form_elements.asp
+18. https://www.w3schools.com/html/html5_svg.asp
+19. https://threkk.medium.com/how-to-make-a-css-only-hamburger-menu-f7ad41e13399
+20. https://stackoverflow.com/questions/39056537/why-don-t-svg-images-scale-using-the-css-width-property
+
+
+
+
+
+
+
+
+
+
 
 </details>
