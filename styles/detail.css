@@ -1,11 +1,445 @@
-main section:nth-of-type(3) ul {
+
+body {
+
+    background-color: var(--background-color);
+}
+
+
+/* section 1 */
+main section:nth-of-type(1) {
+    background-color: var(--background-color);
+
+
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 0;
+    gap: 0;
+    }
+
+/* Hide radio buttons */
+main section:nth-of-type(1) input[type=radio]{
+    display: none;
 
 }
 
-main section:nth-of-type(3) ul a > img {
-    width: 20rem;
+main section:nth-of-type(1) ul {
+    display: flex;
+    justify-content: center;
+
+    background: var(--gray-background-color);
+
+    border-radius: 100px;
+    padding: 0.25rem;
+    margin: 0 2rem 0 2rem;
+
+
+    list-style: none;
+    gap: 0;
+
+
 }
 
-main section:nth-of-type(3) ul h4 > img {
+main section:nth-of-type(1) label {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+
+    background: transparent;
+    color: var(--main-text-color);
+
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    border-radius: 100px;
+
+
+}
+
+
+
+
+main section:nth-of-type(1) label:first-of-type {
+    border-radius: 100px 0 0 100px;
+    width: auto;
+
+}
+main section:nth-of-type(1) label:last-of-type {
+    border-radius: 0 100px 100px 0;
+
+}
+
+
+main section:nth-of-type(1) input[type=radio]:checked + label {
+    background: var(--light-button-color);
+    color: var(--text-color-dark);
+
+    border-radius: 100px;
+    z-index: 1;
+    position: relative;
+
+}
+
+
+main section:nth-of-type(1) label:hover {
+    background: var(--lighter-gray) ;
+    border-radius: 100px;
+}
+
+main section:nth-of-type(1) > h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+/* chat: clip defines the visible region of an absolutely positioned element */
+
+
+/* section 2*/
+main section:nth-of-type(2) {
+    background-color: var(--background);
+}
+
+main section:nth-of-type(2) > h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+/* chat: clip defines the visible region of an absolutely positioned element */
+
+
+/* section 2 ul 1*/
+main section:nth-of-type(2) ul {
+    display: flex;
+    justify-content: left;
+    gap: 0.3rem;
+    padding: 2rem 0 0 0;
+    margin: 0.5rem 3rem 2rem 3rem;
+    /* top, right, bottom, left */
+
+    list-style: none;
+}
+
+
+main section:nth-of-type(2) ul li{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(1) a, main section:nth-of-type(2) ul li:nth-of-type(3) a{
+    background: var(--blue-event-button);
+    color: var(--main-text-color);
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(1) a:hover, main section:nth-of-type(2) ul li:nth-of-type(3) a:hover{
+    background: var(--blue-event-hover);
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(2) a {
+    background: transparent;
+    border: 1px solid var(--blue-event-button);
+    color: var(--blue-event-button);
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(2) a img {
     width: 1rem;
+    filter: brightness(0) saturate(100%) invert(76%) sepia(55%) saturate(6339%) hue-rotate(169deg) brightness(90%) contrast(94%);
+    padding-right: 0.2rem;
+
 }
+/* https://angel-rs.github.io/css-color-filter-generator/ */
+
+main section:nth-of-type(2) ul li:nth-of-type(2) a:hover {
+    border: 1px solid var(--blue-event-hover);
+    color: var(--blue-event-hover);
+    filter: brightness(0) saturate(100%) invert(41%) sepia(21%) saturate(1506%) hue-rotate(155deg) brightness(89%) contrast(94%);
+
+}
+/* https://angel-rs.github.io/css-color-filter-generator/ */
+
+
+
+/* section 2 form*/
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 3rem 3rem 3rem;
+    /* top, right, bottom, left */
+
+    box-sizing: border-box;
+
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas:
+    "search search sport"
+    "start end country";
+}
+
+form input[type="text"] {
+    grid-area: search;
+}
+
+
+form select[name="dropdown"] {
+    grid-area: sport;
+}
+
+form input[type="date"]:nth-of-type(1) {
+    grid-area: start;
+}
+
+form input[type="date"]:nth-of-type(2) {
+    grid-area: end;
+}
+
+form select[name="dropdowncountries"] {
+    grid-area: country;
+}
+
+
+
+form input,
+form select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+
+    font-size: 1rem;
+    border: 2px solid #d7d9dd;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+
+    background-color: var(--form-color);
+    color: #a5a5a5;
+
+    width: 100%;
+    max-width: none;
+}
+
+
+
+/* chat gevraagd hoe ik de form responsive kan maken met de indeling */
+@media (max-width: 768px) {
+    form {
+    grid-template-columns: 1fr 1fr; /* two columns for dates */
+    grid-template-areas:
+    "search search"
+    "sport sport"
+    "start end"
+    "country country";
+}
+}
+
+
+main section:nth-of-type(2) form input[type="text"]:focus,
+main section:nth-of-type(2) form input[type="date"]:focus,
+main section:nth-of-type(2) form select:focus {
+    border-color: #7fb4e2;
+    outline: none;
+    
+
+}
+
+
+
+
+
+
+
+/* section 3 */
+main section:nth-of-type(3) {
+    background-color: var(--background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* h2 left, select right */
+    flex-wrap: wrap; 
+    margin-bottom: 1rem; 
+    gap: 1rem;
+
+    padding-bottom: 3rem;
+}
+
+main section:nth-of-type(3) h2 {
+    text-transform: uppercase;
+    margin: 3rem 3rem 0 3rem;
+}
+
+
+main section:nth-of-type(3) select {
+    margin: 3rem 3rem 0 3rem;
+
+    padding: 0.75rem 1rem;
+
+    font-size: 1rem;
+    border: 2px solid #d7d9dd;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+
+    background-color: var(--form-color);
+    color: #a5a5a5;
+
+}
+
+main section:nth-of-type(3) ul {
+    list-style: none;
+    padding: 0 2rem 0 2rem;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    justify-content: center;
+
+}
+
+
+main section:nth-of-type(3) ul li {
+    background-color: var(--white-background);
+    
+    border-radius: 20px;
+
+
+    position: relative;
+    margin:1rem;
+/* top, right, bottom, left */
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main section:nth-of-type(3) ul li a {
+    text-decoration: none;
+    color: var(--text-color-dark);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+main section:nth-of-type(3) ul li > a > img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0 ;
+    
+
+}
+
+main section:nth-of-type(3) ul > li > a > figure > img{
+    width: 1rem;
+
+    margin-right: 0.5rem;
+
+}
+
+main section:nth-of-type(3) ul li h3 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+
+}
+
+
+main section:nth-of-type(3) ul > li > a > figure {
+
+    display: flex;
+}
+
+main section:nth-of-type(3) ul > li > a > article {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main section:nth-of-type(3) ul li > a > img:last-of-type,
+main section:nth-of-type(3) ul li > a > h4 {
+    display: flex;
+    align-items: center;
+}
+
+main section:nth-of-type(3) ul li > a > img:last-of-type {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+main section:nth-of-type(3) ul li > a > figure > h4 {
+    font-size: 0.75rem;
+    font-weight: 100;
+
+}
+
+
+main section:nth-of-type(3) ul li > a > article > p {
+    font-size: 0.7rem;
+
+
+}
+
+main section:nth-of-type(3) ul li > a > article > p:last-of-type {
+    color: rgba(0, 0, 0, 0.233);
+
+}
+
+main section:nth-of-type(3) h3,
+main section:nth-of-type(3) ul > li > a > figure,
+main section:nth-of-type(3) ul > li > a > article {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    main section:nth-of-type(3) ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screen */
+    }
+}
+
+@media (min-width: 1200px) {
+    main section:nth-of-type(3) ul {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on large screen */
+    }
+}
+
+

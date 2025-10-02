@@ -74,14 +74,14 @@
 			</section>
 
 			<section>
-			<h3>Linked profiles</h3>
+			<h4>Linked profiles</h4>
 			<ul>
 				<li>
-					<img scr="" alt="">
+					<img src="images/footer/placeholder-image-profile-darker.07c4795f4f972b39099d..png" alt="the users profile picture">
 					<a href="#">Elif Yildirim</a>
 				</li>
 				<li>
-					<img scr="" alt="">
+					<img src="images/footer/profile.svg" alt="illustration of a profile">
 					<a href="#">Manage profiles</a>
 				</li>
 			</ul>
@@ -92,37 +92,45 @@
 
 	<main>
         <section>
-            <input type="radio" id="upcomingevents" name="upcoming" value="" checked /> 
-            <label for="upcomingevents">Upcoming events</label>
-
-            <input type="radio" id="pastevents" name="past" value="" unchecked /> 
-            <label for="pastevents">Past events</label>
-
-            <input type="radio" id="yourevents" name="your" value="" unchecked /> 
-            <label for="yourevents">Your events</label>
+			<h2>radio buttons about the events</h2>
+			
+			<ul>
+				<li>
+				<input type="radio" id="upcomingevents" name="events" checked>
+				<label for="upcomingevents">Upcoming events</label>
+				</li>
+				<li>
+				<input type="radio" id="pastevents" name="events">
+				<label for="pastevents">Past events</label>
+				</li>
+				<li>
+				<input type="radio" id="yourevents" name="events">
+				<label for="yourevents">Your events</label>
+				</li>
+			</ul>
         </section>
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio -->
-
+<!-- dat sorteer filter hoeft niet, visueel wel maken maar hoeft niet werkend -->
 
         <section>
-            
+            <h2>buttons</h2>
             <ul>
                 <li>
                     <a href="#">Create event</a>
                 </li>
                 <li>
-                    <a href="#">Academy finder</a>
+                    <a href="#"> <img src="images/detailpage/section2/location-pin.svg" alt="location icon">Academy finder</a>
                 </li>
                 <li>
                     <a href="#">Show map</a>
                 </li>
             </ul>
 
-            <form>
-                <input type="text" id="" value="Search events">
-                
+            <form> 			<!-- search element? zoek op -->
 
-				<select id="sports" name="dropdown" value="Type of game">
+                <input type="text" placeholder="Search events">
+                
+				<select id="sports" name="dropdown" placeholder="Type of game">
 					<option value="boxing">Boxing</option>
 					<option value="taekwondo">Taekwondo</option>
 					<option value="judo">Judo</option>
@@ -130,10 +138,11 @@
 				</select>
 <!-- https://www.w3schools.com/html/html_form_elements.asp -->
 
-                <input type="date" id="" value="Start date">
-                <input type="date" id="" value="End date">
+				<input type="date" id="start-date">
+				<input type="date" id="end-date">
 
-                <select id="countries" name="dropdowncountries" value="Select countries">
+
+                <select name="dropdowncountries" placeholder="Select countries">
 					<option value="Antarctica">Antarctica</option>
 					<option value="Belgium">Belgium</option>
 					<option value="Canada">Canada</option>
@@ -147,61 +156,97 @@
         <section>
             <h2>Events near me</h2>
             <!-- filter knop -->
+			<select name="filter" placeholder="Sort by date">
+					<option value="distance">Sort by distance</option>
+					<option value="date">Sort by date</option>
+			</select>
 
             <ul>
+
+				<!-- de a om de hele li, en img kan niet in de h4, beter cssen met display inline op het plaatje en de h4 kan helemaal weg, moet p zijn -->
                 <li>
                     <a href="">
                         <img src="images/detailpage/v-sambo-hamburg-open-2025.jpg">
                         <h3>V. sambo hamburg open 2025</h3>
-                    </a>
-                    <h4><img src="images/detailpage/germany.svg">Hamburg, Germany</h4>
-                    <p>September 26 -28</p>
-                    <p>1 days left</p>
+							<figure>
+								<img src="images/detailpage/germany.svg">
+								<h4>Hamburg, Germany</h4>
+							</figure>
+							<article>
+								<p>September 26 -28</p>
+								<p>1 days left</p>
+							</article>
+					</a>
                 </li>
                 <li>
                     <a href="">
                         <img src="images/detailpage/grappling-industries-london-2025.jpg">
                         <h3>grappling industries london</h3>
-                    </a>
-                    <h4><img src="images/detailpage/uk.svg">London, United Kingdom</h4>
-                    <p>September 27</p>
-                    <p>2 days left</p>
+							<figure>
+								<img src="images/detailpage/uk.svg">
+								<h4>London, United Kingdom</h4>
+							</figure>
+							<article>
+								<p>September 27</p>
+								<p>1 days left</p>
+							</article>
+					</a>
                 </li>
                 <li>
                     <a href="">
                         <img src="images/detailpage/king-tatami-bjj-gi-kids-pro-2025.jpg">
                         <h3>king tatami - bjj gi kids pro</h3>
-                    </a>
-                    <h4><img src="images/detailpage/germany.svg">Celle, Germany</h4>
-                    <p>September 27</p>
-                    <p>2 days left</p>
+							<figure>
+								<img src="images/detailpage/germany.svg">
+								<h4>Celle, Germany</h4>
+							</figure>
+        					<article>
+								<p>September 27/p>
+								<p>1 days left</p>
+							</article>
+					</a>
                 </li>
                 <li>
                     <a href="" >
                         <img src="images/detailpage/nurnberg-open-championship-2025.jpg">
                         <h3>nürnberg open championship 2025</h3>
-                    </a>
-                    <h4><img src="images/detailpage/germany.svg">Nürnberg, Germany</h4>
-                    <p>September 27</p>
-                    <p>2 days left</p>
+							<figure>
+								<img src="images/detailpage/germany.svg">
+								<h4>Nürnberg, Germany</h4>
+							</figure>
+							<article>
+								<p>September 27/p>
+								<p>1 days left</p>
+							</article>
+					</a>
                 </li>
                 <li>
                     <a href="">
                         <img src="images/detailpage/bjj247-grappling-clash-9-2025.jpg">
                         <h3>bjj247 manchester grappling clash 9</h3>
-                    </a>
-                    <h4><img src="images/detailpage/uk.svg">Manchester, United Kingdom</h4>
-                    <p>September 27</p>
-                    <p>2 days left</p>
+							<figure>
+								<img src="images/detailpage/uk.svg">
+								<h4>Manchester, United Kingdom</h4>
+							</figure>
+							<article>
+								<p>September 27/p>
+								<p>1 days left</p>
+							</article>
+					</a>
                 </li>
                 <li>
                     <a href=""> 
                         <img src="images/detailpage/saarland-meisterschaft-2025.jpg">
                         <h3>saarland meisterschaft 2025</h3>
-                    </a>
-                    <h4><img src="images/detailpage/germany.svg">Völklingen, Germany</h4>
-                    <p>September 27</p>
-                    <p>2 days left</p>
+							<figure>
+								<img src="images/detailpage/germany.svg">
+								<h4>Völklingen, Germany</h4>
+							</figure>
+                    		<article>
+								<p>September 27/p>
+								<p>1 days left</p>
+							</article>
+					</a>
                 </li>
             </ul>
 
@@ -218,7 +263,6 @@
 	<footer>
 		<img src="https://smoothcomp.com/build/webpack/img/smoothcomp.fed7973d51f68b6fb8a8..svg"
 				alt="logo van smoothcomp">		
-				<!-- kan ik hier gelijk de img als logo doen of moet er een h2 or 3 komen? -->
 		<nav>
 			<section>
 			<h3>Athletes</h3>

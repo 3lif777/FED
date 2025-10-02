@@ -181,7 +181,7 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  dingen uitgeprobeerd, uitgezocht. 
 
 
   ### Agenda voor meeting
@@ -312,26 +312,30 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  css'en gaat goed. 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  vragen: moeten de events in mijn tweede pagina alleen in een ul, of moet ik een ul in een ul hebben zodat ik de elementen kan display gridden? 
+  ziet mijn html op de tweede er goed uit?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  dit is alles wat we besproken hebben:
+  - flexbox gebruiken ipv grid voor elementen die naast/onder elkaar staan (bij mark z'n website)
+  - vergeet dark light mode niet
+  - ik hoef de img niet te editten voor light mode, gewoon achtergrond veranderen en misschien letters
+  - je moet weten hoe je screenreader werkt; stem veranderd. hij gaat vragen hoe je alleen heading laat voorlezen
+  - je moet code kunnen uitleggen; notes met onderbouwing is handig
+  - vergeet github niet
+  - hier moet een heading komen en dan met css verbergen. bij elke section MOET er een heading komen
+  - value hoeft niet, placeholder in html
+  - search element? zoek op 
+  - dat sorteer filter hoeft niet, visueel wel maken maar hoeft niet werkend
+  - de a om de hele li, en img kan niet in de h4, beter cssen met display inline op het plaatje en de h4 kan helemaal weg, moet p zijn
+  
+
+
 
 </details>
 

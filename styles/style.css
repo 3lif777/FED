@@ -11,18 +11,32 @@
 /* Custom properties */
 :root {
 	/* Dark mode */
-	--main-text-color: #f4f6fb;
+	--main-text-color: rgba(255, 255, 255, 90%);
 	--secondary-text-color: rgba(244, 246, 251, 0.5);
 	--tertairy-text-color: #090909;
 	--text-color-dark: #484848;
+
+
 	--background: black;
 	--background-color: #171719;
+	--gray-background-color: rgba(231, 234, 255, 0.1);
+	--lighter-gray:  rgba(231, 234, 255, 0.37);
+	--white-background: #fff;
+
+
 	--event-button-color: #2C3EDC;
+	--blue-event-button: #179de0;
+	--blue-event-hover: #20739c;
+
+
 	--wazige-button-color: rgba(244, 246, 251, 0.1);
 	--light-button-color: rgba(255, 255, 255, 0.8);
+
+
 	--heading-yellow: #DAA035;
 
-	--gray-background-color: rgba(231, 234, 255, 0.1);
+	--form-color: #ffff;
+
 
 
 
@@ -75,7 +89,7 @@ header {
 }
 
 header img {
-	width: 10rem;
+	width: 12rem;
 	max-width: 100%;
 	height: auto;
 }
@@ -135,14 +149,58 @@ header a:nth-of-type(2) {
 	}
 	/* ::before en ::after? */
 
-header nav ul li {
-	padding: 1rem;
-}
 
+
+header nav ul li {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	border-bottom: 1px solid var(--gray-background-color);
+
+}
 
 header nav ul li a {
 	text-decoration: none;
 	color: var(--main-text-color);
+
+	padding: 0.6rem 1rem;
+	line-height: 1.5rem;
+
+	font-size: 0.9rem;
+}
+
+header nav section h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.8rem 1rem;
+	border-bottom: 1px solid var(--gray-background-color);
+
+
+}
+
+header nav section h4 {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	color: var(--secondary-text-color);
+	background-color: var(--gray-background-color);
+	padding: 0.8rem 1rem;
+
+}
+
+header nav section ul img {
+	width: 1.5rem;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+header nav section ul li:nth-of-type(2) img {
+	filter: invert(100%) ;
+}
+/* https://medium.com/@charlotte.pearce1984/using-css-filters-to-change-svg-colours-2b4887c1a5db */
+
+header nav section:nth-of-type(3) li {
+	padding: 0rem 1rem;
+	display: flex;
+	align-items: center;
 }
 
 
@@ -192,7 +250,7 @@ footer nav li {
 footer nav a {
 	text-decoration: none;
 	color: var(--main-text-color);
-	font-size: 0.9rem;
+	font-size: 0.85rem;
 }
 
 footer > ul {
@@ -209,7 +267,7 @@ footer > ul li {
 footer > ul a {
 	text-decoration: none;
 	color: var(--secondary-text-color);
-	font-size: 0.85rem;
+	font-size: 0.75rem;
 }
 
 footer > ul li:last-child a {

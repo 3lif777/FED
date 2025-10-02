@@ -34,12 +34,13 @@ main section:nth-of-type(1)::after {
 
 main section:nth-of-type(1) h2 {
 	/* https://www.w3schools.com/howto/howto_css_image_text.asp */
-	font-weight: 400;
-	font-size: 2.2rem;
+	font-weight: 300;
+	font-size: 2rem;
 	/* Ik had opgezocht "what is the best font-size unit for a responsive website" en kreeg rem als antwoord */
 	margin-top: 1rem;
-	margin-bottom: 2rem;
-	max-width: 22rem;
+	margin-bottom: 1rem;
+	max-width: 20rem;
+	line-height: 105%;
 }
 
 main section:nth-of-type(1) h2, section:nth-of-type(1) a {
@@ -73,8 +74,6 @@ main section:nth-of-type(1) a {
 
 
 
-
-
 /* section 2 */
 main section:nth-of-type(2) > h2 {
 	color: var(--heading-yellow);
@@ -93,14 +92,25 @@ main section:nth-of-type(2) h2 strong {
 	font-weight: 500;
 }
 
+
+
 main section:nth-of-type(2) > ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 	list-style: none;
-
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
+	
+	grid-template-columns: repeat(auto-fit, minmax(225px, auto));
+	justify-content: center;
 	width: 100%;
+}
+
+
+/* chatgpt; items fill the whole screen, but still never go beyond 4 per row*/
+@media (min-width:1200px) {
+	main section:nth-of-type(2) > ul {
+		grid-template-columns: repeat(5, minmax(225px, auto));
+	}
 }
 
 
@@ -132,6 +142,10 @@ main section:nth-of-type(2) ul li a img {
 	display: block;
 
 }
+
+
+
+
 /* ::before en ::after is een soort van laag/div waarin je elementen kan veranderen */
 main section:nth-of-type(2) > ul > li > a::before {
 	content: "";
