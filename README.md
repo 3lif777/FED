@@ -360,21 +360,20 @@ Als tip gaven ze bijv. dat we de H1 niet moeten vergeten, de header niet moeten 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  - alles wat ik gedaan heb voor dit vak was nieuw voor me. 
+  - ik vond het leuk om mezelf erin kwijt te raken en uren lang eraan te werken, zonder dat ik dat door heb (de tijd zo snel gaat)
+  - als ik het eenmaal snap, dan lukt het me om ermee te spelen, maar vaak moest ik alsnog dingen opzoeken; dingen die ik wel tientallen keren gedaan heb
+  - toen ik eenmaal erachter kwam hoe de @media werkte, ging dat best goed. het voelt alsof @media mijn leven heeft geredt omdat het alles makkelijker voor me maakte
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
-
+   - het verschil tussen de parent en de child weten wanneer je aan het css'en bent. ik vond het moeilijk om te weten wat ik op welke moest zetten. 
+  - ik vond de radio buttons en de form en de positionering ervan heel moeilijk. 
+  - ik vond display flex en grid ook lastig. soms wist ik niet zeker welke ik moest gebruiken. 
 
 
 
