@@ -1,0 +1,606 @@
+
+/* section 1 */
+main section:nth-of-type(1) {
+	position: relative;
+	min-height: 60vh;
+	padding-bottom: 3vh;
+	padding-top: 20vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+}
+
+main section:nth-of-type(1) img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 60vh;
+	object-fit: cover; 
+	/* vult de hele container, gevraagt aan ChatGPT hoe de image groter moet en nog steeds responsive blijft*/
+	z-index: 0;
+}
+
+main section:nth-of-type(1)::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to left top, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+	z-index: 1;
+	/* voor de gradient op de afbeelding */
+}
+
+main section:nth-of-type(1) h2 {
+	/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+	font-weight: 300;
+	font-size: 2rem;
+	/* Ik had opgezocht "what is the best font-size unit for a responsive website" en kreeg rem als antwoord */
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	max-width: 20rem;
+	line-height: 105%;
+}
+
+main section:nth-of-type(1) h2, section:nth-of-type(1) a {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+
+main section:nth-of-type(1) a:first-of-type {
+	text-decoration: none;
+	color: var(--main-text-color);
+	background-color: var(--event-button-color);
+
+}
+
+main section:nth-of-type(1) a:last-of-type {
+	text-decoration: none;
+	color: var(--main-text-color);
+	background-color: var(--wazige-button-color);
+	backdrop-filter: blur(0.5rem);
+	
+}
+
+main section:nth-of-type(1) a {
+	font-size: 1.3rem;
+	padding: 0.9rem 1.4rem;
+	border-radius: 5.3rem;
+	cursor: pointer;
+	margin-bottom: 1rem;
+}
+
+/* hover */
+main section:nth-of-type(1) a:first-of-type:hover {
+	background-color: var(--hover-dark-blue);
+}
+main section:nth-of-type(1) a:last-of-type:hover {
+	background-color: var(--hover-wazig);
+}
+
+/* section 2 */
+main section:nth-of-type(2) > h2 {
+	color: var(--heading-yellow);
+	color: var(--main-text-color);
+
+	text-align: center;
+	margin: 5rem 1.2rem 3rem 1.2rem;
+
+	font-size: 1.5rem;
+	line-height: 1.3;
+	font-weight: 500;
+	/* is dit allemaal goed? */
+}
+main section:nth-of-type(2) h2 strong {
+	color: var(--heading-yellow);
+	font-weight: 500;
+}
+
+
+
+main section:nth-of-type(2) > ul {
+	display: grid;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	
+	grid-template-columns: repeat(auto-fit, minmax(225px, auto));
+	justify-content: center;
+	width: 100%;
+}
+
+
+/* chatgpt; items fill the whole screen, but still never go beyond 4 per row*/
+@media (min-width:1200px) {
+	main section:nth-of-type(2) > ul {
+		grid-template-columns: repeat(5, minmax(225px, auto));
+	}
+}
+
+
+main section:nth-of-type(2) > ul > li > a {
+	position: relative;
+	aspect-ratio: 5 / 3; 
+	display: block ;
+	overflow: hidden;
+	
+}
+
+main section:nth-of-type(2) > ul > li > a > p {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--main-text-color);
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	
+}
+
+
+main section:nth-of-type(2) ul li a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+
+}
+
+
+
+
+/* ::before en ::after is een soort van laag/div waarin je elementen kan veranderen */
+main section:nth-of-type(2) > ul > li > a::before {
+	content: "";
+	position: absolute;
+
+	inset: 0; /* top:0; left:0; right:0; bottom:0 */
+	background: rgba(0,0,0,0.7); /* donker laagje */
+}
+
+
+
+
+main section:nth-of-type(2) ul li:last-of-type {
+	background-color: var(--background-color);
+	height: 100%;
+}
+
+main section:nth-of-type(2) ul li:last-of-type h3 {
+	color: var(--secondary-text-color);
+	font-size: 1.3rem;
+	font-weight: 500;
+
+	text-align: center;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+main section:nth-of-type(2) ul li:last-of-type nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 0.5rem;
+}
+
+main section:nth-of-type(2) ul li:last-of-type nav ul {
+	list-style: none;
+	max-width: 12rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+main section:nth-of-type(2) ul li:last-of-type nav ul li a {
+	color: var(--secondary-text-color);
+	background: var(--gray-background-color);
+
+	text-decoration: none;
+	font-size: 0.8rem;
+	border-radius: 1rem;
+
+	display: inline-block;
+	padding: 0.1rem 0.4rem;
+	margin: 0.1rem;
+}
+
+
+/* hover */
+main section:nth-of-type(2) > ul > li > a:hover::before {
+	background: rgba(0, 0, 0, 0);
+	transition: ease-in-out 0.5s;
+}
+
+main section:nth-of-type(2) ul li p:hover{
+	text-shadow: 4px 4px 4px rgba(0,0,0,1);
+
+}
+
+main section:nth-of-type(2) ul li:last-of-type nav ul li a:hover{
+	background-color: var(--lighter-gray);
+}
+
+
+
+/* section 3 */
+main section:nth-of-type(3) {
+	position: relative;
+	margin: 0 1.5rem;
+
+
+}
+
+main section:nth-of-type(3)::before {
+	content: "";
+	display: block;
+	width: 100%;
+	aspect-ratio: 1297 / 568; /* verhouding van je afbeelding */
+	background: 
+	linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,8) 100%),
+		url("../images/bracketillustration.png");
+	background-size: cover;
+	background-position: center;
+
+
+}
+
+main section:nth-of-type(3) > h2 {
+
+	color: var(--main-text-color);
+	font-size: 2rem;
+	font-weight: 250;
+	position: absolute;
+	margin-top: -7rem;
+
+	z-index: 2;
+
+	width: 100%;
+	text-align: center;
+
+	
+
+}
+
+
+main section:nth-of-type(3) ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-flow: row;
+	max-width: calc(4 * 250px + 3 * 1rem);
+
+
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	gap: 0.3rem;
+
+	text-align: center;
+
+	
+}
+
+main section:nth-of-type(3) ul li {
+	color: var(--secondary-text-color);
+	font-size: 1rem;
+	font-weight: 500;
+
+	padding: 1rem;
+
+	background-color: var(--background-color);
+	display: grid;
+	grid-column: auto;
+	position: relative;
+
+}
+
+
+main section:nth-of-type(3) ul li > img {
+	height:auto;
+	display: block;
+	margin: auto;
+
+
+}
+
+main section:nth-of-type(3) ul li:last-of-type {
+	grid-column: 1 / -1;
+
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 1rem;
+	align-items: start;
+
+	
+}
+
+
+
+main section:nth-of-type(3) ul li:last-of-type h2 strong {
+	color: var(--main-text-color);
+	font-weight: normal;
+}
+
+main section:nth-of-type(3) ul li:last-of-type h2 {
+	color: var(--secondary-text-color);
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: 500;
+	width: 15rem;
+
+	text-align: left;
+}
+
+main section:nth-of-type(3) ul li:last-of-type p {
+	color: var(--secondary-text-color);
+	width: 25rem;
+	font-size: 0.85rem;
+	font-weight: 500;
+
+	text-align: left;
+
+}
+
+main section:nth-of-type(3) ul li:last-of-type a {
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+
+	text-align: left;
+
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+main section:nth-of-type(3) ul li:last-of-type > img {
+	grid-column: 2;
+	grid-row: 1 / span 3;
+	width: 10rem;
+	height: auto;
+}
+
+
+
+@media (width > 75rem ) {
+	main section:nth-of-type(3) > h2 {
+	
+
+	font-size: 3rem;
+	width: 35rem;
+	grid-column: 1 / -1;   /* make it span all columns */
+  	justify-self: center;  /* centers the whole element */
+	text-align: center; 
+
+
+	}
+
+	main section:nth-of-type(3) ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+	margin-top: 1rem; 
+	}
+
+	main section:nth-of-type(3) ul li:last-of-type {
+		grid-column-start:5 ;
+		grid-column-end: 6;
+
+		grid-row-start: 1;
+		grid-row-end: 3;
+
+		width: clamp(10rem, 30vw, 25rem);
+		/* chat: clamp(min, preferred, max) */
+
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	main section:nth-of-type(3) ul li:last-of-type h2 {
+		font-size: 2.2rem;
+
+		margin-top: 1rem;
+
+	}
+
+	main section:nth-of-type(3) ul li:last-of-type p {
+		font-size: 1rem;
+		width: 17rem;
+		line-height: 1.5;
+		word-spacing: 0.125rem;
+		font-weight: 500;
+	}
+
+	main section:nth-of-type(3) ul li:last-of-type a {
+		font-size: 1.5rem;
+
+		align-self: flex-end;
+
+	}
+
+	main section:nth-of-type(3) ul li:last-of-type > img {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	max-width: 10rem;
+	height: auto;
+	}
+}
+
+main section:nth-of-type(3) ul li:last-of-type a:hover{
+	color: var(--main-text-color);
+}
+
+/* section 4 */
+main section:nth-of-type(4) {
+	background-color: var(--heading-yellow);
+	border-radius: 1rem;
+	padding-top: 1rem;
+
+	margin: 2rem 1.5rem 3rem 1.5rem;
+
+	
+	color: var(--tertairy-text-color);
+}
+
+main section:nth-of-type(4) h2 {
+	max-width: 16rem;
+	margin: 2rem auto 1rem auto;
+
+	font-size: 2rem;
+	font-weight: 500;
+
+	text-align: center;
+}
+
+main section:nth-of-type(4) ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+main section:nth-of-type(4) ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	line-height: 1.2;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+	max-width: 17rem;
+}
+
+main section:nth-of-type(4) ul li p {
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+
+
+main section:nth-of-type(4) img {
+	height:auto;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+
+/* aan chatgpt gevraagd hoe ik mijn svg's groter kon maken, omdat het mij niet lukte. */
+main section:nth-of-type(4) svg {
+	width: 52px;
+	height: 52px;
+	margin-right: 10px;
+	flex-shrink: 0;
+}
+
+
+@media (width > 60rem ) {
+	main section:nth-of-type(4) {
+		display: grid;
+		grid-template-columns:  1fr 1fr;
+
+		
+		max-width: 70rem;
+		width: 100%;
+
+		height: auto;
+		margin: 5rem auto;
+		padding: 0 3rem;
+
+		box-sizing: border-box;
+
+	}
+
+	main section:nth-of-type(4) img {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 4;
+
+		width: 100%;
+		align-self: center;
+
+	}
+
+	main section:nth-of-type(4) h2 {
+		font-size:2.9rem ;
+		max-width: 21rem;
+
+		line-height: 1.2;
+
+		align-self: end;
+
+	}
+
+	main section:nth-of-type(4) ul {
+		align-self: start;		
+	}
+
+	main section:nth-of-type(4) ul li p {
+		font-size: 1.1rem;
+	}
+
+	main section:nth-of-type(4) h2, 
+	main section:nth-of-type(4) ul {
+		grid-column:  1 / 2;
+
+}
+
+}
+
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--light-mode-background);
+	}
+
+	main section:nth-of-type(2) ul li:last-of-type {
+		background-color: var(--light-mode-accents);
+		
+	}
+	main section:nth-of-type(2) ul li:last-of-type h3 {
+		color: var(--tertairy-text-color);
+	}
+
+	main section:nth-of-type(2) ul li:last-of-type nav ul li a {
+		color: var(--tertairy-text-color);
+		background-color: var(--lighter-gray);
+	}
+	main section:nth-of-type(2) ul li:last-of-type nav ul li a:hover {
+		background-color: var(--main-text-color);
+	}
+
+
+	
+
+	main section:nth-of-type(3)::before {
+		content: "";
+		display: block;
+		width: 100%;
+		aspect-ratio: 1297 / 568;
+
+		background: 
+			linear-gradient(to top, #8a8888 0%, rgba(138,136,136,0) 55%),
+			linear-gradient(to bottom, #8a8888 0%, rgba(138,136,136,0) 25%),
+			url("../images/bracketillustration.png");
+    
+		background-size: cover;
+		background-position: center;
+	}
+
+	
+}
